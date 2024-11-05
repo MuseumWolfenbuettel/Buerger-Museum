@@ -10,7 +10,6 @@
             text-align: left;
             margin: 20px;
             line-height: 1.5;
-            position: relative;
         }
         .container {
             max-width: 800px;
@@ -21,9 +20,8 @@
             margin-top: 20px;
         }
         .logo {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
+            display: block;
+            margin: 20px auto 0 auto; /* Центрирование и отступ сверху */
             width: 100px; /* Задайте нужный размер логотипа */
         }
     </style>
@@ -38,7 +36,8 @@
             <source src="BM%20DE.mp3" type="audio/mpeg">
             Ваш браузер не поддерживает воспроизведение аудио.
         </audio>
+        <!-- Логотип под аудиоплеером -->
+        <img src="Museum_Wolfenbuettel.jpg" alt="Museum Logo" class="logo">
     </div>
-    <img src="Museum_Wolfenbuettel.jpg" alt="Museum Logo" class="logo">
 </body>
 </html>
